@@ -1,9 +1,9 @@
-<index.html >
+<index.html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍀 L’oroscopo di Pesce Solitario🎣</title>
+    <title>PESCE SOLITARIO</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,29 +28,12 @@
             font-weight: bold;
             color: #333;
         }
-        button {
-            background-color: #ff6b6b;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #ff3b3b;
-        }
-        button:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🍀 L’oroscopo di Pesce Solitario🎣</h1>
+        <h1>🎉PESCE SOLITARIO 🎉</h1>
         <p class="phrase" id="phrase"></p>
-        <button id="generateBtn" onclick="generatePhrase()">Genera una frase</button>
     </div>
 
     <script>
@@ -84,10 +67,10 @@
         function generatePhrase() {
             const randomIndex = Math.floor(Math.random() * phrases.length);
             document.getElementById('phrase').innerText = phrases[randomIndex];
-            document.getElementById('generateBtn').disabled = true;
         }
 
         window.onload = generatePhrase;
     </script>
 </body>
 </html>
+
