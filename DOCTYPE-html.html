@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'oroscopo di Pesce Solitario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff6b6b;
+        }
+        .phrase {
+            font-size: 20px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #333;
+        }
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ff3b3b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉L'oroscopo di PESCE SOLITARIO 🎉</h1>
+        <p class="phrase" id="phrase"></p>
+        <button onclick="generatePhrase()">Genera un'altra frase</button>
+    </div>
+
+    <script>
+        const phrases = [
+            "SINGLE COME UN’OSTRICA, MA ALMENO DENTRO HO UNA PERLA",
+            "L’AMORE VA E VIENE, IL FRITTO MISTO RESTA!",
+            "MEGLIO SOLI CHE MALE ACCOSTATI, TIPO COZZE E KETCHUP!",
+            "Piuttosto che un amore tiepido, meglio un bel crudo di mare!",
+            "Meglio un buon fritto misto che una relazione tutta spine!",
+            "Sono in una relazione complicata… con il cibo.",
+            "Tutti cercano la dolce metà. Io cerco la doppia porzione.",
+            "Single come un gambero: faccio passi indietro quando vedo una storia complicata!",
+            "La vita da single è come uno spaghetto allo scoglio: un po’ incasinata, ma sempre saporita!",
+            "MEGLIO SINGLE CHE CON UNA SPINA NEL FIANCO!",
+            "L’amore è come una frittura: se è fatto male, è pesante da digerire!",
+            "Meglio un cuoppo di frittura che un amore che sa di poco.",
+            "Il mare è pieno di pesci… peccato che abbiano tutti il profilo fake.",
+            "L’unico pesce abboccato al mio amo… è stato il cassiere quando gli ho chiesto il conto.",
+            "Tutti cercano la ciliegina sulla torta… io mi accontento della torta intera",
+            "L’unico impegno serio della mia vita è il dolce a fine pasto.",
+            "mood vita sentimentale: piatta come una sogliola",
+            "Il mare è pieno di pesci, ma io pesco sempre gli scorfani.",
+            "L’unico appuntamento fisso nella mia vita? QUELLO CON IL BANCO DEL FRESCO dopo i primi",
+            "Sono single per scelta… di qualcun altro, ma dettagli.",
+            "L’amore è come il baccalà: o lo sai trattare bene, o diventa una tragedia",
+            "Single non per scelta, ma perché sono come un’aragosta: costoso e difficile da gestire!",
+            "Non sono single, sono un pezzo unico",
+            "San Valentino? Io festeggio il 15, quando i cioccolatini sono scontati."
+        ];
+
+        function generatePhrase() {
+            const randomIndex = Math.floor(Math.random() * phrases.length);
+            document.getElementById('phrase').innerText = phrases[randomIndex];
+        }
+
+        window.onload = generatePhrase;
+    </script>
+</body>
+</html>
